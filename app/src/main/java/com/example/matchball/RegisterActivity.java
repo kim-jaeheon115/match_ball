@@ -22,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mDatabaseRef;
-    private EditText mEtEmail , mEtPwd ,mEtpnumber; //이메일 ,비밀번호 , 폰번호 + 깃허브 마지막추가
+    private EditText mEtEmail , mEtPwd ,mEtpnumber, mEtNickname; //이메일 ,비밀번호 , 폰번호 ,닉네임  (깃허브 마지막추가(완료))
     private Button mBtnRegister;
 
 //
@@ -37,7 +37,9 @@ public class RegisterActivity extends AppCompatActivity {
         mEtEmail = (EditText) findViewById(R.id.et_email);
         mEtPwd = (EditText) findViewById(R.id.et_pwd);
         mEtpnumber = (EditText) findViewById(R.id.et_pnumber);
+        mEtNickname = (EditText) findViewById(R.id.et_Nickname);
         mBtnRegister =(Button) findViewById(R.id.btn_register);
+
 
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
                     String strEmail = mEtEmail.getText().toString();
                     String strPwd = mEtPwd.getText().toString();
                     String strpnumber = mEtpnumber.getText().toString();
+                    String strNickname = mEtNickname.getText().toString();
 
 
                     //firebase auth 진행
@@ -61,7 +64,10 @@ public class RegisterActivity extends AppCompatActivity {
                              account.setIdToken(firebaseUser.getUid());
                              account.setEmailId(firebaseUser.getEmail());
                              account.setPassword(strPwd);
-                             account.setPhoneNumper(firebaseUser.getPhoneNumber()); //폰넘버까지 구현
+                             account.setPhonenumber(firebaseUser.getPhoneNumber()); //폰넘버까지 구현
+                             account.setNickname(firebaseUser.getDisplayName());
+
+
 
                              //setValue : 데이터베이스에 삽입하는행위
                              mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);

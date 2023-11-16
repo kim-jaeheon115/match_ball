@@ -7,9 +7,9 @@ public class UserAccount {
 
     private String idToken; //firebase Uid (고유 토큰정보)
     private String emailId;  //이메일 아이디
-    private  String password; // 비밀번호
-    //닉네임 , 유저메세지 , 토큰등 구현하면됨
-    private String phoneNumper;
+    private  String password; // 비밀번호 +닉네임 , 유저메세지 , 토큰등 구현하면됨
+    private String phonenumber;
+    private String nickname;
 
 
     //아래는 게터세터 생성자 생성
@@ -40,11 +40,24 @@ public class UserAccount {
         this.password = password;
     }
 
-    public String getPhoneNumper() {
-        return phoneNumper;
+
+    public UserAccount(String nickname) {
+        this.nickname = nickname;
     }
 
-    public void setPhoneNumper(String phoneNumper) {
-        this.phoneNumper = phoneNumper;
+    public String getPhonenumber() {
+        return phonenumber;
+    }
+
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 }

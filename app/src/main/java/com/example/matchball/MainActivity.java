@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //로그아웃하기115162616
+                //로그아웃하기
                 mFirebaseAuth.signOut();
                 Intent intent = new Intent(MainActivity.this , LoginActivity.class);
                 startActivity(intent);
