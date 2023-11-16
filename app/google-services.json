@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "899185196739",
+    "firebase_url": "https://matchball-85da5-default-rtdb.firebaseio.com",
+    "project_id": "matchball-85da5",
+    "storage_bucket": "matchball-85da5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899185196739:android:9503a5c1f2619bb6be2c76",
+        "android_client_info": {
+          "package_name": "com.example.matchball"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkxrDtxavccjZlzN1209ct_qiuoZoB5-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
