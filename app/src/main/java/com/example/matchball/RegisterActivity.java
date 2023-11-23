@@ -80,7 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                              Toast.makeText(RegisterActivity.this, "회원가입에 성공했어요!", Toast.LENGTH_SHORT).show();
                          }else {
-                             Toast.makeText(RegisterActivity.this, "회원가입에 실패 , 이메일형식으로 다시 생성해주세요!", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(RegisterActivity.this, "회원가입에 실패 , 이메일형식으로  다시 생성해주세요!", Toast.LENGTH_SHORT).show();
 
 
                          }
