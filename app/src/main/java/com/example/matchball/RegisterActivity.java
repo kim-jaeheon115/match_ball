@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
-//356
+//3
 
     private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mDatabaseRef;

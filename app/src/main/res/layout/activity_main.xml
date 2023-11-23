@@ -10,19 +10,17 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="352dp"
-        android:layout_height="681dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_logout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/main" />
+        android:layout_width="413dp"
+        android:layout_height="731dp"
+        app:srcCompat="@drawable/main"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="2dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="어서오세요 매치볼입니다"
+        android:text="어서오세요! 매치볼입니다 :)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,9 +32,11 @@
         android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="356dp"
         android:text="로그아웃"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
