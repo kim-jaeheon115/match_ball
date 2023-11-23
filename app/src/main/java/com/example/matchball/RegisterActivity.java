@@ -22,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mDatabaseRef;
-    private EditText mEtEmail , mEtPwd ,mEtpnumber, mEtNickname; //이메일 ,비밀번호 , 폰번호 ,닉네임  (깃허브 마지막추가(완료))
+    private EditText mEtEmail , mEtPwd ,mEtpnumber, mEtNickname,mEtname , mEtage; //이메일 ,비밀번호 , 폰번호 ,닉네임 ,이름 ,나이
     private Button mBtnRegister;
 
 //
@@ -39,6 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
         mEtpnumber = (EditText) findViewById(R.id.et_pnumber);
         mEtNickname = (EditText) findViewById(R.id.et_Nickname);
         mBtnRegister =(Button) findViewById(R.id.btn_register);
+        mEtname = (EditText) findViewById(R.id.et_name);
+        mEtage = (EditText) findViewById(R.id.et_age);
 
 
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +52,8 @@ public class RegisterActivity extends AppCompatActivity {
                     String strPwd = mEtPwd.getText().toString();
                     String strpnumber = mEtpnumber.getText().toString();
                     String strNickname = mEtNickname.getText().toString();
+                    String strname = mEtname.getText().toString();
+                    String strage = mEtage.getText().toString();
 
 
                     //firebase auth 진행
@@ -64,17 +68,19 @@ public class RegisterActivity extends AppCompatActivity {
                              account.setIdToken(firebaseUser.getUid());
                              account.setEmailId(firebaseUser.getEmail());
                              account.setPassword(strPwd);
-                             account.setPhonenumber(firebaseUser.getPhoneNumber()); //폰넘버까지 구현
-                             account.setNickname(firebaseUser.getDisplayName());
+                             account.setPhonenumber(strpnumber); //폰넘버까지 구현
+                             account.setNickname(strNickname);
+                             account.setName(firebaseUser.getDisplayName());
+                             account.setAge(strage);
 
 
 
                              //setValue : 데이터베이스에 삽입하는행위
                              mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
 
-                             Toast.makeText(RegisterActivity.this, "회원가입에 성공하셨습니다!", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(RegisterActivity.this, "회원가입에 성공했어요!", Toast.LENGTH_SHORT).show();
                          }else {
-                             Toast.makeText(RegisterActivity.this, "회원가입에 실패하셨습니다!", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(RegisterActivity.this, "회원가입에 실패 , 이메일형식으로 다시 생성해주세요!", Toast.LENGTH_SHORT).show();
 
 
                          }

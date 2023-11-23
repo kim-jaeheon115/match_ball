@@ -10,6 +10,8 @@ public class UserAccount {
     private  String password; // 비밀번호 +닉네임 , 유저메세지 , 토큰등 구현하면됨
     private String phonenumber;
     private String nickname;
+    private String name; //이름
+    private String age; //나이
 
 
     //아래는 게터세터 생성자 생성
@@ -59,5 +61,26 @@ public class UserAccount {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+//    public UserAccount(String name, String age) { //생성자인데 없어도될거같음
+//        this.name = name;
+//        this.age = age;
+//    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 }
