@@ -8,9 +8,7 @@ public class User {
     private int age;
     private String pNumber;
 
-    public User(){
-
-    }
+    public User(){}
 
     public String getProfile() {
         return profile;
