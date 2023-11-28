@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseAuth = FirebaseAuth.getInstance();
 
         Button btn_logout = findViewById(R.id.btn_logout);
+        Button btn_customset = findViewById(R.id.btn_customset);
+
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,8 +44,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_customset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),UserDatabase.class); //누르면 이동할곳 =>Userdatabase.java로 간다
+                startActivity(intent);//인텐트시작
+            }
+        });
 
-//        mFirebaseAuth.getCurrentUser().delete(); //탈퇴처리
+        mFirebaseAuth.getCurrentUser().delete(); //탈퇴처리
+
+
 
     }
 }

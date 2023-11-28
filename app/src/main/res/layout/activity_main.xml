@@ -32,12 +32,22 @@
         android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="356dp"
+        android:layout_marginBottom="364dp"
         android:text="로그아웃"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_customset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원조회"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

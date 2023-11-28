@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class UserDatabase extends AppCompatActivity {
-
+//리사이클러 메인액티비티라 생각하면댐
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
