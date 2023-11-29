@@ -3,12 +3,13 @@ package com.example.matchball;
 public class User {
     private String profile;
     private String id;
-    private int pw;
+    private String pw;
     private String userName;
-    private int age;
+    private String age;
     private String pNumber;
 
-    public User(){}
+    public User() { //public 유저 받아오는것
+    }
 
     public String getProfile() {
         return profile;
@@ -26,12 +27,20 @@ public class User {
         this.id = id;
     }
 
-    public int getPw() {
+    public String getPw() {
         return pw;
     }
 
-    public void setPw(int pw) {
+    public void setPw(String pw) {
         this.pw = pw;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getUserName() {
@@ -42,13 +51,7 @@ public class User {
         this.userName = userName;
     }
 
-    public int getAge() {
-        return age;
-    }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public String getpNumber() {
         return pNumber;

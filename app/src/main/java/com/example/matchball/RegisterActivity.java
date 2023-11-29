@@ -3,6 +3,7 @@ package com.example.matchball;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference("matchball");
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference();
 
         mEtEmail = (EditText) findViewById(R.id.et_email);
         mEtPwd = (EditText) findViewById(R.id.et_pwd);
@@ -65,7 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
                          if(task.isSuccessful()) {
                              FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
                              UserAccount account = new UserAccount();
-                             account.setIdToken(firebaseUser.getUid());
+//                             account.setIdToken(firebaseUser.getUid());
                              account.setEmailId(firebaseUser.getEmail());
                              account.setPassword(strPwd);
                              account.setPhonenumber(strpnumber); //폰넘버까지 구현
@@ -79,6 +80,9 @@ public class RegisterActivity extends AppCompatActivity {
                              mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
 
                              Toast.makeText(RegisterActivity.this, "회원가입에 성공했어요!", Toast.LENGTH_SHORT).show();
+                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                             startActivity(intent);
+                             finish(); //현재액티비티 ㅊ파괴
                          }else {
                              Toast.makeText(RegisterActivity.this, "회원가입에 실패 , 이메일형식으로  다시 생성해주세요!", Toast.LENGTH_SHORT).show();
 

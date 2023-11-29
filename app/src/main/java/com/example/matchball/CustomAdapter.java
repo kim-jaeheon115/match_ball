@@ -2,6 +2,7 @@ package com.example.matchball;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,15 +38,29 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) { //실제적으로 매칭을 시켜줌
-        Glide.with(holder.itemView)
-                .load(arrayList.get(position).getProfile())
-                .into(holder.iv_profile);
+    public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) { //실제적으로 매칭을 시켜줌 값 받아옴
+
+        User user = arrayList.get(position);
+
+//        Glide.with(holder.itemView)
+//                .load(arrayList.get(position).getProfile())
+//                .into(holder.iv_profile);
         holder.tv_id.setText(arrayList.get(position).getId());
         holder.tv_pw.setText(String.valueOf(arrayList.get(position).getPw()));
         holder.tv_un.setText(arrayList.get(position).getUserName());
         holder.tv_age.setText(arrayList.get(position).getAge());
         holder.tv_pn.setText(arrayList.get(position).getpNumber());
+
+        holder.itemView.setTag(position);
+        holder.itemView.setOnClickListener(new View.OnClickListener() { //추가한내용
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,MainActivity.class);
+                context.startActivity(intent);
+            }
+        });
+
+
 
     }
 
@@ -69,3 +84,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         }
     }
 }
+
+
+
+
+
+
