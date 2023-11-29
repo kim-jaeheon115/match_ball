@@ -8,9 +8,9 @@
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="이메일을 입력해주세요."
         android:inputType="textEmailAddress"
@@ -21,9 +21,9 @@
 
     <EditText
         android:id="@+id/et_Nickname"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="닉네임을 입력해주세요. "
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +33,9 @@
 
     <EditText
         android:id="@+id/et_pnumber"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="전화번호를 입력해주세요."
         android:inputType="textPhonetic"
@@ -46,9 +46,9 @@
 
     <EditText
         android:id="@+id/et_pwd"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="비밀번호를 입력해주세요."
         android:inputType="textPassword"
@@ -60,9 +60,9 @@
 
     <EditText
         android:id="@+id/et_name"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="이름을 입력해주세요."
         android:inputType="textPersonName"
@@ -73,9 +73,9 @@
 
     <EditText
         android:id="@+id/et_age"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="나이를 입력해주세요"
         android:inputType="textPersonName"
@@ -84,11 +84,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_Nickname" />
 
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="'-' 빼고 적어주셔도 됩니다."
+        android:textColor="@color/black_overlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pnumber" />
+
+
     <Button
         android:id="@+id/btn_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="가입완료"
+        android:backgroundTint="@color/light_blue_600"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

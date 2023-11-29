@@ -72,15 +72,6 @@ public class UserDatabase extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-
-
-
     }
 }
 

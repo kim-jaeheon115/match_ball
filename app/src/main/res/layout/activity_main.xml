@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="364dp"
         android:text="로그아웃"
+        android:backgroundTint="@color/light_blue_600"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.832"
@@ -43,9 +44,13 @@
         android:id="@+id/btn_customset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="364dp"
+        android:backgroundTint="@color/light_blue_600"
         android:text="회원조회"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
