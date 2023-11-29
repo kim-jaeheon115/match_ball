@@ -29,6 +29,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".CustomAdapter"/>
+        <activity android:name=".Register_complete"/>
+        <activity android:name=".User_register"/>
     </application>
 
 </manifest>

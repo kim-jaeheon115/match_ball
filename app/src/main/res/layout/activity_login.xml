@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/im"
-
+    android:padding="16dp"
     tools:context=".LoginActivity">
+
+<!--    로그인화면-->
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="194dp"
         android:layout_height="87dp"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

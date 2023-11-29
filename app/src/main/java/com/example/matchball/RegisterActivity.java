@@ -19,8 +19,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
-//3
-
+//
+//회원가입
     private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mDatabaseRef;
     private EditText mEtEmail , mEtPwd ,mEtpnumber, mEtNickname,mEtname , mEtage; //이메일 ,비밀번호 , 폰번호 ,닉네임 ,이름 ,나이

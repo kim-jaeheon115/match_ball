@@ -19,7 +19,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
-
+//리사이클링자바
     private ArrayList<User> arrayList;
     private Context context;
 

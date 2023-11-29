@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+//메인 자바
 
     private FirebaseAuth mFirebaseAuth;
 
