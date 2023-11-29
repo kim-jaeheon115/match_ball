@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/im"
+
     tools:context=".LoginActivity">
 
 
@@ -11,6 +13,7 @@
         android:id="@+id/imageView"
         android:layout_width="194dp"
         android:layout_height="87dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +28,7 @@
         android:layout_marginTop="150dp"
         android:ems="10"
         android:hint="이메일을 입력하세요"
+        android:background="@color/white"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +40,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:ems="10"
+        android:background="@color/white"
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
