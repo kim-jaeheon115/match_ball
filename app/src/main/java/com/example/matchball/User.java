@@ -1,23 +1,20 @@
 package com.example.matchball;
 
 public class User {
-    private String profile;
+    // private String profile;
     private String id;
     private String pw;
     private String userName;
     private String age;
     private String pNumber;
 
-    public User() { //public 유저 받아오는것
-    }
-
-    public String getProfile() {
-        return profile;
-    }
-
-    public void setProfile(String profile) {
-        this.profile = profile;
-    }
+//    public String getProfile() {
+//        return profile;
+//    }
+//
+//    public void setProfile(String profile) {
+//        this.profile = profile;
+//    }
 
     public String getId() {
         return id;
@@ -35,14 +32,6 @@ public class User {
         this.pw = pw;
     }
 
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
     public String getUserName() {
         return userName;
     }
@@ -51,7 +40,13 @@ public class User {
         this.userName = userName;
     }
 
+    public String getAge() {
+        return age;
+    }
 
+    public void setAge(String age) {
+        this.age = age;
+    }
 
     public String getpNumber() {
         return pNumber;

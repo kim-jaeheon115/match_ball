@@ -2,6 +2,7 @@ package com.example.matchball;
 
 /*
 사용자 계정 정보 모델 클래스
+회원가입
 */
 public class UserAccount {
 
@@ -62,11 +63,6 @@ public class UserAccount {
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
-
-//    public UserAccount(String name, String age) { //생성자인데 없어도될거같음
-//        this.name = name;
-//        this.age = age;
-//    }
 
     public String getName() {
         return name;

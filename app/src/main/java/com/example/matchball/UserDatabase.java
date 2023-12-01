@@ -23,7 +23,7 @@ public class UserDatabase extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<User> arrayList;
+    private ArrayList<UserAccount> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
@@ -55,9 +55,7 @@ public class UserDatabase extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 //파이어베이스 데이터베이스의 데이터를 받아오는곳
                 for(DataSnapshot snapshot1 : snapshot.getChildren()){ //옛날버전이라 스냅샷1로 ㄱㄱ
-                    Log.d(TAG, "snapShot : " + snapshot1);
-                    User user = snapshot.getValue(User.class);//만들어둔 User객체에 데이터를 담는다
-                    Log.d(TAG, "snapshop : " + user);
+                    UserAccount user = snapshot1.getValue(UserAccount.class);//만들어둔 User객체에 데이터를 담는다
                     arrayList.add(user);//담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼준비
                 }
                 adapter.notifyDataSetChanged(); //리스트 저장 및 새로고침
