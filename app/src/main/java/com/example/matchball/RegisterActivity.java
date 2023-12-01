@@ -84,7 +84,7 @@ public class RegisterActivity extends AppCompatActivity {
                              startActivity(intent);
                              finish(); //현재액티비티 ㅊ파괴
                          }else {
-                             Toast.makeText(RegisterActivity.this, "회원가입에 실패 , 이메일형식으로  다시 생성해주세요!", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(RegisterActivity.this, "회원가입에 실패", Toast.LENGTH_SHORT).show();
 
 
                          }

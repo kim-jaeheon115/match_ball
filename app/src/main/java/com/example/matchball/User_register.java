@@ -32,6 +32,7 @@ public class User_register extends AppCompatActivity {
         RadioGroup rg_foot = findViewById(R.id.rg_foot);
 
         Button btn_finish = findViewById(R.id.btn_finish);
+        Button btn_jump = findViewById(R.id.btn_jump);
 
         btn_finish.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,17 @@ public class User_register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_jump.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //건너뛰기
+                Intent intent = new Intent(User_register.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 

@@ -13,8 +13,7 @@
         android:orientation="vertical">
 
 
-
-            <!-- 이름 -->
+        <!-- 이름 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,10 +113,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="완료"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/colorGreen"
                 android:layout_gravity="center"
                 android:onClick="onSubmitButtonClick" />
 
-
+        <Button
+            android:id="@+id/btn_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/light_blue_600"
+            android:text="건너뛰기" />
 
 
     </LinearLayout>
