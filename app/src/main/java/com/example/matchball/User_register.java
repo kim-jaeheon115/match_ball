@@ -15,9 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class User_register extends AppCompatActivity {
     // 본인등록 자바 페이지
-    EditText et_teamname,et_nation,et_location ;
-    RadioGroup rg_gender , rg_foot;
-    Button btn_next;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,16 +31,16 @@ public class User_register extends AppCompatActivity {
         Button btn_next = findViewById(R.id.btn_next);
         Button btn_jump = findViewById(R.id.btn_jump);
 
-        btn_next.setOnClickListener(new View.OnClickListener() {
+        btn_next.setOnClickListener(new View.OnClickListener() { //다음버튼
             @Override
             public void onClick(View view) {
-                //완료버튼을 누르면
-                Intent intent = new Intent(User_register.this,MainActivity.class);
+                //다음버튼을 누르면
+                Intent intent = new Intent(User_register.this,User_register2.class);
                 startActivity(intent);
             }
         });
 
-        btn_jump.setOnClickListener(new View.OnClickListener() {
+        btn_jump.setOnClickListener(new View.OnClickListener() { //건너뛰기버튼
             @Override
             public void onClick(View view) {
                 //건너뛰기

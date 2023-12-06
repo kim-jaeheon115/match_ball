@@ -31,6 +31,8 @@
         <activity android:name=".CustomAdapter"/>
         <activity android:name=".Register_complete"/>
         <activity android:name=".User_register"/>
+        <activity android:name=".User_register2"/>
+        <activity android:name=".User_register3"/>
     </application>
 
 </manifest>

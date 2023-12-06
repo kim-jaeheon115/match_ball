@@ -30,36 +30,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textStart"
-            android:text="자신이 선호하는 포지션을 선택해주세요.  (최대 3개)"
+            android:text="자신의  플레이스타일을 소개해주세요.  (최대 5개)"
             android:textColor="@color/black2"
             android:textSize="16dp"/>
 
         <TextView
             android:id="@+id/tv3"
-            android:layout_marginBottom="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textStart"
             android:textColor="@color/colorGray"
-            android:text="희망하는 포지션을 선택해주세요. "
+            android:text="나의 플레이 스타일은...? "
+            android:layout_marginBottom="40dp"
             android:textSize="12dp"/>
+
+
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/position" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/detail" />
+            app:srcCompat="@drawable/play_style" />
 
         <EditText
-            android:id="@+id/prefer_position"
+            android:id="@+id/my_char"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -67,25 +62,17 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:text=""
-            android:hint="선호포지션을 적어주세요."/>
+            android:hint="나의 특성"/>
 
         <Button
-            android:id="@+id/btn_next2"
+            android:id="@+id/btn_finish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="다음"
+            android:text="완료"
             android:layout_marginTop="250dp"
             android:backgroundTint="@color/colorGreen"
             android:layout_gravity="center"
             android:onClick="onSubmitButtonClick" />
-
-        <Button
-            android:id="@+id/btn_jump2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/light_blue_600"
-            android:text="건너뛰기" />
 
 
     </LinearLayout>
