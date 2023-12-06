@@ -18,13 +18,13 @@ public class User_register2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_register2);
 
-        Button btn_next = findViewById(R.id.btn_next2);
-        Button btn_jump = findViewById(R.id.btn_jump2);
+        Button btn_next2 = findViewById(R.id.btn_next2);
+        Button btn_jump2 = findViewById(R.id.btn_jump2);
 
-        EditText pre_po = findViewById(R.id.prefer_position);
+        EditText et_po = findViewById(R.id.et_potion);
 
 
-        btn_next.setOnClickListener(new View.OnClickListener() {
+        btn_next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d("User_register2", "Next button clicked");
@@ -33,7 +33,7 @@ public class User_register2 extends AppCompatActivity {
             }
         });
 
-        btn_jump.setOnClickListener(new View.OnClickListener() { //건너뛰기버튼
+        btn_jump2.setOnClickListener(new View.OnClickListener() { //건너뛰기버튼
             @Override
             public void onClick(View view) {
                 //건너뛰기

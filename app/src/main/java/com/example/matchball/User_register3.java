@@ -19,37 +19,36 @@ public class User_register3 extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_register3);
+        setContentView(R.layout.activity_user_register3); //필수
 
-        Button btn_finish = findViewById(R.id.btn_finish);
-
-        EditText my_cha = findViewById(R.id.my_char);
+        Button btn_jump = findViewById(R.id.btn_jump3); //////확인버튼
+        EditText my_cha = findViewById(R.id.et_char);
         TextView tv2 = findViewById(R.id.tv2);
 
+//
+//        tv2.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//                // 입력 전에 호출되는 메서드
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//                // 입력 중에 호출되는 메서드
+//                // 여기에서 TextView 등에 입력 내용을 즉시 표시할 수 있습니다.
+//                tv2.setText(charSequence.toString());
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable editable) {
+//                // 입력 후에 호출되는 메서드
+//            }
+//        });
 
-        tv2.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                // 입력 전에 호출되는 메서드
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                // 입력 중에 호출되는 메서드
-                // 여기에서 TextView 등에 입력 내용을 즉시 표시할 수 있습니다.
-                tv2.setText(charSequence.toString());
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                // 입력 후에 호출되는 메서드
-            }
-        });
-
-        btn_finish.setOnClickListener(new View.OnClickListener() {
+        btn_jump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(User_register3.this,MainActivity.class);
+                Intent intent = new Intent(User_register3.this,Register_complete2.class);
                 startActivity(intent);
             }
         });
